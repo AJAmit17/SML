@@ -34,7 +34,6 @@ print("Ridge Regression MSE:", mean_squared_error(y_test, y_pred_ridge))
 print("LASSO Regression MSE:", mean_squared_error(y_test, y_pred_lasso))
 
 # Compare coefficients
-plt.figure(figsize=(10,5))
 plt.plot(lr.coef_, marker='o', label='Linear Regression')
 plt.plot(ridge.coef_, marker='x', label='Ridge Regression')
 plt.plot(lasso.coef_, marker='s', label='LASSO Regression')
